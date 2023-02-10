@@ -7,33 +7,45 @@
 }
 
 #bootstrap_navbar {
-  background-color: rgb(203, 144, 96);
+  background-color: rgb(57, 22, 5);
 }
 
 .container-fluid {
   font-family: "Roboto", sans-serif;
 }
 
+.navbar-toggler:hover {
+  color: aliceblue;
+  cursor: pointer;
+}
+
 .main {
   text-align: center;
 }
 
-#article_main {
+.article_main {
   font-family: "Roboto", sans-serif;
+  -webkit-text-stroke: 0.75px black;
+  font-weight: 300;
+  color: white;
+  font-size: x-large;
 }
 
 .titulo_main {
-  font-size: 60px;
-  font-family: impact;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  font-size: 180px;
+  font-family: "Sassy Frass", cursive;
+  padding-top: 30px;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+  color: white;
 }
 
 .subtitulo_main {
   padding-bottom: 25px;
-  padding-top: 20px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-family: "Satisfy", cursive;
+  font-weight: 100;
+  -webkit-text-stroke: 1px black;
+  color: white;
+  font-size: 43px;
 }
 
 #portada {
@@ -47,9 +59,12 @@
 
 .present {
   padding-top: 30px;
+  padding-bottom: 30px;
   font-weight: bold;
   font-family: "Caveat", cursive;
-  font-size: xx-large;
+  font-size: 40px;
+  -webkit-text-stroke: 1px black;
+  color: white;
 }
 
 .video {
@@ -58,14 +73,21 @@
 }
 
 .form-container {
-  background-color: rgb(189, 115, 19);
   padding-bottom: 60px;
   padding-left: 50px;
   font-weight: 500;
 }
 
+.h1_contacto {
+  text-align: center;
+  text-decoration-color: white;
+  font-weight: 900;
+  padding-top: 20px;
+}
+
 .h2_contacto {
-  padding-top: 15px;
+  text-align: center;
+  padding-top: 25px;
   padding-bottom: 15px;
   font-weight: 800;
   font-family: "Lucida Sans";
@@ -106,6 +128,7 @@
   overflow: hidden;
   padding-top: 25px;
   padding-bottom: 25px;
+  padding-left: 50px;
 }
 
 /* Animacion y Transformacion */
@@ -130,6 +153,8 @@
 }
 
 .img_cartas {
+  padding-top: 25px;
+  padding-bottom: 25px;
   display: grid;
   grid-template-columns: auto;
   grid-column: 2/3;
@@ -169,16 +194,53 @@ a:hover {
   color: aliceblue;
 }
 
-#bootstrap_navbar {
-  background-color: rgb(203, 144, 96);
+.background_image_home {
+  background-image: url(/assets/images/backgorunds/background_home.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-h1 h2 {
-  background-color: burlywood;
+.background_image_entradas {
+  background-image: url(/assets/images/backgorunds/background_galeria.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-.main {
-  background-color: burlywood;
+.background_image_postres {
+  background-image: url(/assets/images/backgorunds/background_postres.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.background_image_principales {
+  background-image: url(/assets/images/backgorunds/background_principales.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.background_image_galeria {
+  background-image: url(/assets/images/backgorunds/background_entradas.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.background_image_contacto {
+  background-image: url(/assets/images/backgorunds/background_contacto.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: rgb(252, 237, 181);
 }
 
 .footer {
@@ -195,23 +257,36 @@ h1 h2 {
   background-color: burlywood;
 }
 
-.fondo_condiciones {
-  background-color: rgb(232, 195, 147);
-}
-
-.img_galeria {
-  background-color: rgb(232, 195, 147);
-}
-
-.fondo_cartas {
-  background-color: rgb(232, 195, 147);
-}
-
 .form-container {
-  background-color: burlywood;
+  background-color: rgba(205, 136, 25, 0.2);
+  color: aliceblue;
 }
 
 /*---------------------------INDEX----------------------------*/
+@media only screen and (max-width: 500px) and (min-width: 341px) {
+  .background_home {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media only screen and (max-width: 500px) and (min-width: 341px) {
+  .titulo_main {
+    font-size: 70px;
+    padding-bottom: 30px;
+    -webkit-text-stroke: 0px black;
+  }
+}
+@media only screen and (max-width: 500px) and (min-width: 341px) {
+  .subtitulo_main {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 500px) and (min-width: 341px) {
+  .presentacion {
+    font-size: 20px;
+  }
+}
 @media only screen and (max-width: 980px) and (min-width: 821px) {
   .portada {
     max-width: 450px;
@@ -327,8 +402,8 @@ h1 h2 {
 }
 @media only screen and (max-width: 500px) and (min-width: 341px) {
   .carta_entradas {
-    padding-top: 100px;
-    padding-bottom: 160px;
+    padding-top: 130px;
+    padding-bottom: 190px;
     max-width: 340px;
     max-height: auto;
     touch-action: auto;

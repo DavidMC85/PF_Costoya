@@ -1,14 +1,54 @@
-#bootstrap_navbar {
-    background-color: rgb(203, 144, 96);
+
+.background_image_home {
+    background-image: url(/assets/images/backgorunds/background_home.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-h1 h2 {
-    background-color: burlywood;
+.background_image_entradas {
+    background-image: url(/assets/images/backgorunds/background_galeria.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.main {
-    background-color: burlywood;
+.background_image_postres {
+    background-image: url(/assets/images/backgorunds/background_postres.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
+
+.background_image_principales {
+    background-image: url(/assets/images/backgorunds/background_principales.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.background_image_galeria {
+    background-image: url(/assets/images/backgorunds/background_entradas.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.background_image_contacto {
+    background-image: url(/assets/images/backgorunds/background_contacto.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: rgb(252, 237, 181);
+}
+
+
 
 .footer {
     color: aliceblue;
@@ -23,17 +63,7 @@ h1 h2 {
     background-color: burlywood;
 }
 
-.fondo_condiciones {
-    background-color: rgb(232, 195, 147);
-}
-
-.img_galeria {
-    background-color: rgb(232, 195, 147);
-}
-
-.fondo_cartas {
-    background-color: rgb(232, 195, 147);
-}
 .form-container {
-    background-color: burlywood;
+    background-color: rgba(205, 136, 25, 0.2);
+    color: aliceblue;
 }

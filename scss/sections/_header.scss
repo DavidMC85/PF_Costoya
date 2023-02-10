@@ -1,7 +1,12 @@
 #bootstrap_navbar {
-    background-color: rgb(203, 144, 96);
+    background-color: rgb(57, 22, 5);
 }
 
 .container-fluid {
     font-family: 'Roboto', sans-serif;
+}
+
+.navbar-toggler:hover {
+    color: aliceblue;
+    cursor: pointer;
 }
