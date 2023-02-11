@@ -7,7 +7,7 @@
 }
 
 #bootstrap_navbar {
-  background-color: rgb(57, 22, 5);
+  background-color: rgb(86, 33, 7);
 }
 
 .container-fluid {
@@ -72,23 +72,21 @@
   padding-bottom: 40px;
 }
 
-.form-container {
-  padding-bottom: 60px;
-  padding-left: 50px;
-  font-weight: 500;
-}
-
+/*------------CONDICIONES & CONTACTO--------------*/
 .h1_contacto {
   text-align: center;
   text-decoration-color: white;
   font-weight: 900;
   padding-top: 20px;
+  margin-top: 25px;
+  margin-bottom: 20px;
 }
 
 .h2_contacto {
   text-align: center;
+  margin-bottom: 50px;
   padding-top: 25px;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
   font-weight: 800;
   font-family: "Lucida Sans";
 }
@@ -103,10 +101,6 @@
   padding-left: 15px;
 }
 
-.fondo_condiciones {
-  padding-bottom: 35px;
-}
-
 .titulo_condiciones {
   padding-left: 10px;
 }
@@ -115,6 +109,18 @@
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 10px;
+}
+
+#p1 {
+  margin-left: 40px;
+  -webkit-text-decoration: chocolate;
+          text-decoration: chocolate;
+}
+
+#h2c {
+  margin-left: 25px;
+  -webkit-text-decoration: black;
+          text-decoration: black;
 }
 
 /*---------galeria-----------*/
@@ -159,6 +165,40 @@
   grid-template-columns: auto;
   grid-column: 2/3;
   image-resolution: auto;
+}
+
+.formulario-bts {
+  padding-top: 25px;
+  padding-bottom: 20px;
+  background-color: rgba(255, 211, 154, 0.546);
+  max-width: 1000px;
+  height: 480px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+form {
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  font-weight: 400;
+}
+
+.map-responsive {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  max-height: 400px;
+}
+
+.map-responsive iframe {
+  margin-top: 35px;
+  margin-bottom: 10px;
+  max-height: 380px;
+  max-width: 390px;
 }
 
 .footer {
@@ -240,7 +280,7 @@ a:hover {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  color: rgb(252, 237, 181);
+  color: rgb(48, 44, 29);
 }
 
 .footer {
@@ -253,13 +293,19 @@ a:hover {
   background-color: black;
 }
 
-.condiciones {
-  background-color: burlywood;
+.background_condiciones {
+  background-image: url(/assets/images/backgorunds/background_extra.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-.form-container {
-  background-color: rgba(205, 136, 25, 0.2);
-  color: aliceblue;
+.fondo_condiciones {
+  max-width: 1500px;
+  height: 1000px;
+  margin: auto;
+  background-color: rgba(246, 209, 161, 0.5);
 }
 
 /*---------------------------INDEX----------------------------*/
@@ -486,4 +532,17 @@ a:hover {
     max-height: 220px;
     touch-action: auto;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+/*@mixin titulo {
+        font-size: 60px;
+        font-family: impact;
+        padding-top: 20px;
+        padding-bottom: 20px;
+}
+
+@mixin subtitulo  {
+    padding-bottom: 25px;
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}*//*# sourceMappingURL=main.css.map */

@@ -7,9 +7,10 @@
     font-family: 'Roboto', sans-serif;
     -webkit-text-stroke: .75px black;
     font-weight: 300;
-    color:white;
+    color: white;
     font-size: x-large;
 }
+
 .titulo_main {
     font-size: 180px;
     font-family: 'Sassy Frass', cursive;
@@ -17,6 +18,7 @@
     -webkit-text-stroke: 1px rgb(0, 0, 0);
     color: white;
 }
+
 .subtitulo_main {
     padding-bottom: 25px;
     font-family: 'Satisfy', cursive;
@@ -49,24 +51,22 @@
     padding-top: 40px;
     padding-bottom: 40px;
 }
-
-.form-container {
-    padding-bottom: 60px;
-    padding-left: 50px;
-    font-weight: 500;
-}
+/*------------CONDICIONES & CONTACTO--------------*/
 
 .h1_contacto {
     text-align: center;
     text-decoration-color: white;
     font-weight: 900;
     padding-top: 20px;
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
 
 .h2_contacto {
     text-align: center;
+    margin-bottom: 50px;
     padding-top: 25px;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     font-weight: 800;
     font-family: 'Lucida Sans'
 }
@@ -75,14 +75,12 @@
     color: rgb(22, 38, 146);
     font-family: 'Roboto', sans-serif;
 }
+
 .condiciones {
     padding-bottom: 50px;
     padding-left: 15px;
 }
 
-.fondo_condiciones {
-    padding-bottom: 35px;
-}
 
 .titulo_condiciones {
     padding-left: 10px;
@@ -94,6 +92,14 @@
     padding-left: 10px;
 }
 
+#p1 {
+    margin-left: 40px;
+    text-decoration: chocolate;
+}
+#h2c{
+    margin-left: 25px;
+    text-decoration: black;
+}
 /*---------galeria-----------*/
 
 .img_galeria {
@@ -113,7 +119,7 @@
 
 /* Animacion y Transformacion */
 .imgimg {
-    width: 450px; 
+    width: 450px;
     height: 280px;
     max-width: 450px;
     max-height: 300px;
@@ -141,3 +147,38 @@
     grid-column: 2/3;
     image-resolution: auto;
 }
+
+.formulario-bts {
+    padding-top: 25px;
+    padding-bottom: 20px;
+    background-color: rgba(255, 211, 154, 0.546);
+    max-width: 1000px;
+    height: 480px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+form{
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: solid;
+    font-weight: 400;
+}
+
+.map-responsive{
+    display: flex;
+    justify-content: center;
+    overflow:hidden;
+    position:relative;
+    max-height:400px;
+
+}
+
+.map-responsive iframe{
+    margin-top: 35px;
+    margin-bottom: 10px;
+    max-height:380px;
+    max-width:390px;
+}
+

@@ -8,7 +8,8 @@
       "default",
       {
         "ignore": [
-          "iframe[allow]"
+          "iframe[allow]",
+          "iframe[loading]"
         ]
       }
     ],
@@ -20,6 +21,12 @@
     ],
     "axe/name-role-value": "off",
     "axe/forms": "off",
-    "axe/parsing": "off"
+    "axe/parsing": "off",
+    "axe/text-alternatives": [
+      "default",
+      {
+        "frame-title": "off"
+      }
+    ]
   }
 }

@@ -45,7 +45,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    color: rgb(252, 237, 181);
+    color: rgb(48, 44, 29);
 }
 
 
@@ -59,11 +59,20 @@
     background-color: black;
 }
 
-.condiciones {
-    background-color: burlywood;
+.background_condiciones {
+    background-image: url(/assets/images/backgorunds/background_extra.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.form-container {
-    background-color: rgba(205, 136, 25, 0.2);
-    color: aliceblue;
+
+
+.fondo_condiciones {
+    max-width: 1500px;
+    height:1000px;
+margin: auto;
+    background-color:rgba(246, 209, 161, 0.5);
+    
 }
