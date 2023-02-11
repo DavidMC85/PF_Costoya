@@ -1,18 +1,21 @@
 .footer {
     display: flex;
+    position: relative;
+    width: 100%;
     gap: 112px;
     height: 30px;
     justify-content: center;
     padding-top: 15px;
-    padding-left: 0;
-    margin: 0px;
+    padding-bottom: 15px;
+    margin:auto;
     text-align: center;
+    margin-top: 25px;
 }
 
 .foottxt {
     display: flex;
     padding-bottom: 10px;
-    padding-top: 15px;
+    padding-top: 20px;
     justify-content: center;
     margin-bottom: auto;
     font-family: 'Roboto', sans-serif;

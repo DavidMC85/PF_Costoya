@@ -203,19 +203,22 @@ form {
 
 .footer {
   display: flex;
+  position: relative;
+  width: 100%;
   gap: 112px;
   height: 30px;
   justify-content: center;
   padding-top: 15px;
-  padding-left: 0;
-  margin: 0px;
+  padding-bottom: 15px;
+  margin: auto;
   text-align: center;
+  margin-top: 25px;
 }
 
 .foottxt {
   display: flex;
   padding-bottom: 10px;
-  padding-top: 15px;
+  padding-top: 20px;
   justify-content: center;
   margin-bottom: auto;
   font-family: "Roboto", sans-serif;
@@ -303,7 +306,7 @@ a:hover {
 
 .fondo_condiciones {
   max-width: 1500px;
-  height: 1000px;
+  height: auto;
   margin: auto;
   background-color: rgba(246, 209, 161, 0.5);
 }
@@ -402,8 +405,14 @@ a:hover {
 }
 @media only screen and (max-width: 820px) and (min-width: 621px) {
   .imgimg {
+    display: flex;
     max-width: 400px;
     max-height: 320px;
+    align-items: center;
+    margin: auto;
+  }
+  .img_galeria {
+    padding-left: 0px;
   }
 }
 @media only screen and (max-width: 620px) and (min-width: 501px) {
@@ -419,6 +428,8 @@ a:hover {
     padding-left: 50px;
     max-width: 350px;
     max-height: 220px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 @media only screen and (max-width: 340px) and (min-width: 5px) {
