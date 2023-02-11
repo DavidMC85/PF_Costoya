@@ -172,7 +172,6 @@
   padding-bottom: 20px;
   background-color: rgba(255, 211, 154, 0.546);
   max-width: 1000px;
-  height: 480px;
   align-items: center;
   justify-content: center;
   margin: auto;
@@ -186,17 +185,30 @@ form {
   font-weight: 400;
 }
 
+section {
+  max-width: 100%;
+  max-height: auto;
+}
+
 .map-responsive {
   display: flex;
   justify-content: center;
   overflow: hidden;
   position: relative;
-  max-height: 400px;
+  max-height: 500px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.map-responsive iframe {
-  margin-top: 35px;
-  margin-bottom: 10px;
+.row {
+  margin: auto;
+}
+
+iframe {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin: auto;
   max-height: 380px;
   max-width: 390px;
 }
@@ -309,6 +321,7 @@ a:hover {
   height: auto;
   margin: auto;
   background-color: rgba(246, 209, 161, 0.5);
+  padding-bottom: 25px;
 }
 
 /*---------------------------INDEX----------------------------*/
@@ -542,6 +555,20 @@ a:hover {
     max-width: 300px;
     max-height: 220px;
     touch-action: auto;
+  }
+}
+@media only screen and (max-width: 500px) and (min-width: 341px) {
+  .map_responsive {
+    position: fixed;
+    width: 300px;
+    height: 260px;
+  }
+}
+@media only screen and (max-width: 500px) and (min-width: 341px) {
+  iframe {
+    width: 300px;
+    height: 210px;
+    margin-top: 20px;
   }
 }
 /*@mixin titulo {
