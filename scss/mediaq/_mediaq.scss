@@ -7,7 +7,12 @@
         object-fit: cover;
     }
 }
-
+@media only screen and (max-width: 500px) and (min-width: 341px) {
+    .logo-contacto-navbar {
+        max-width: 35px;
+        max-height: 35px;
+    }
+}
 
 @media only screen and (max-width: 500px) and (min-width: 341px) {
     .titulo_main {
@@ -90,6 +95,11 @@
     .video {
         max-width: 300px;
         max-height: 260px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+    .logo-contacto-navbar{
+        size: 35px;
     }
 }  
 
