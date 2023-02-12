@@ -15,10 +15,17 @@
 
 .foottxt {
     display: flex;
-    padding-bottom: 10px;
-    padding-top: 20px;
+    padding-bottom: 6px;
     justify-content: center;
+    margin-bottom: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.foottxt2 {
     margin-bottom: auto;
+    display: flex;
+    padding-top: 14px;
+    justify-content: center;
     font-family: 'Roboto', sans-serif;
 }
 

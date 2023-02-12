@@ -71,10 +71,10 @@
     }
 }
 
-@media only screen and (max-width: 980px) and (min-width: 821px) {  
+@media only screen and (max-width: 3840px) and (min-width: 821px) {  
     .video {
-        max-width: 450px;
-        max-height: 400px;
+        max-width: 750px;
+        max-height: 620px;
     }
 }  
 
@@ -89,14 +89,14 @@
 @media only screen and (max-width: 620px) and (min-width: 501px) { 
     .video {
         max-width: 350px;
-        max-height: 300;
+        height: 280px;
     }
 }  
 
 @media only screen and (max-width: 500px) and (min-width: 341px) {  
     .video {
         max-width: 300px;
-        max-height: 260px;
+        max-height: 200px;
         padding-bottom: 0px;
         padding-top: 0px;
     }
@@ -302,3 +302,15 @@
         margin-top: 20px;
     }
 }
+
+@media only screen and (max-width: 500px) and (min-width: 341px) {  
+    .texto_condiciones {
+        margin-right: 20px;
+        margin-left: -10px;
+    }
+    #p1 {
+        text-align: justify;
+        margin-right: 0;
+    }
+}  
+
