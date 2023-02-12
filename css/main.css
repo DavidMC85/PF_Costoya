@@ -68,20 +68,21 @@
 }
 
 .titulo_main {
-  font-size: 180px;
-  font-family: "Sassy Frass", cursive;
+  font-size: 100px;
+  font-weight: 400;
+  font-family: "Kaushan Script", cursive;
   padding-top: 30px;
   -webkit-text-stroke: 1.2px rgb(0, 0, 0);
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .subtitulo_main {
+  padding-top: 40px;
   padding-bottom: 25px;
   font-family: "Satisfy", cursive;
-  font-weight: 100;
-  -webkit-text-stroke: 1px black;
-  color: white;
-  font-size: 43px;
+  -webkit-text-stroke: 0.2px rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 53px;
 }
 
 #portada {
