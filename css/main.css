@@ -31,6 +31,7 @@
   max-width: 65px;
   max-height: 65px;
   margin-right: 25px;
+  margin-left: 0;
 }
 
 .dropdown-menu {
@@ -257,6 +258,7 @@ iframe {
   justify-content: center;
   padding-top: 15px;
   padding-bottom: 15px;
+  padding-left: 0;
   margin: auto;
   text-align: center;
   margin-top: 25px;
@@ -371,6 +373,8 @@ a:hover {
   .logo-contacto-navbar {
     max-width: 35px;
     max-height: 35px;
+    margin-left: 0px;
+    padding-left: 0px;
   }
 }
 @media only screen and (max-width: 500px) and (min-width: 341px) {
@@ -456,10 +460,11 @@ a:hover {
   }
 }
 /*---------------------------GALERIA---------------------------*/
-@media only screen and (max-width: none) and (min-width: 621px) {
+@media only screen and (max-width: 1400px) and (min-width: 821px) {
   .imgimg {
-    max-width: 450px;
-    max-height: 400px;
+    max-width: 580px;
+    max-height: 420px;
+    margin: auto;
   }
 }
 @media only screen and (max-width: 820px) and (min-width: 621px) {

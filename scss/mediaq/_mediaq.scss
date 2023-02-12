@@ -11,6 +11,8 @@
     .logo-contacto-navbar {
         max-width: 35px;
         max-height: 35px;
+        margin-left: 0px;
+        padding-left: 0px;
     }
 }
 
@@ -112,11 +114,11 @@
 
 /*---------------------------GALERIA---------------------------*/
 
-@media only screen and (max-width:none ) and (min-width: 621px) {  
+@media only screen and (max-width:1400px) and (min-width:821px) {  
     .imgimg {
-        max-width: 450px;
-        max-height: 400px;
-        
+        max-width: 580px;
+        max-height: 420px;
+        margin: auto;
     }
 }  
 
