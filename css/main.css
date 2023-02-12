@@ -285,7 +285,7 @@ a:hover {
 }
 
 .background_image_home {
-  background-image: url(/assets/images/backgorunds/background_home.jpg);
+  background-image: url(../assets/images/backgorunds/background_home.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -293,7 +293,7 @@ a:hover {
 }
 
 .background_image_entradas {
-  background-image: url(/assets/images/backgorunds/background_galeria.jpg);
+  background-image: url(../assets/images/backgorunds/background_galeria.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -301,7 +301,7 @@ a:hover {
 }
 
 .background_image_postres {
-  background-image: url(/assets/images/backgorunds/background_postres.jpg);
+  background-image: url(../assets/images/backgorunds/background_postres.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -309,7 +309,7 @@ a:hover {
 }
 
 .background_image_principales {
-  background-image: url(/assets/images/backgorunds/background_principales.jpg);
+  background-image: url(../assets/images/backgorunds/background_principales.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -317,7 +317,7 @@ a:hover {
 }
 
 .background_image_galeria {
-  background-image: url(/assets/images/backgorunds/background_entradas.jpg);
+  background-image: url(../assets/images/backgorunds/background_entradas.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -325,12 +325,20 @@ a:hover {
 }
 
 .background_image_contacto {
-  background-image: url(/assets/images/backgorunds/background_contacto.jpg);
+  background-image: url(../assets/images/backgorunds/background_contacto.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   color: rgb(48, 44, 29);
+}
+
+.background_condiciones {
+  background-image: url(../assets/images/backgorunds/background_extra.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .footer {
@@ -341,14 +349,6 @@ a:hover {
 .foottxt {
   color: beige;
   background-color: black;
-}
-
-.background_condiciones {
-  background-image: url(/assets/images/backgorunds/background_extra.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 .fondo_condiciones {
