@@ -18,32 +18,30 @@
     </head>
 
     <body class="background_image_galeria">
-        <header>
+        <header id="bootstrap_navbar">
             <!-- Navbar de Bootstrap -->
-            <nav class="navbar navbar-expand-lg" id="bootstrap_navbar">
+            <nav class="navbar navbar-expand-xl">
                 <div class="container-fluid">
-                    <a class="logo_navbar" href="../index.html"><img src="../assets/images/logo_naranja.png" style="max-width: 60px;" alt="logo_naranja"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>                  
+                    <a class="logo_navbar" href="../index.html"><img src="../assets/images/logo_naranja.png" style="max-width: 80px;" alt="logo_naranja"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon bg-success-subtle"></span>                  
                         </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active link-light" aria-current="page"
-                                    href="../paginas/galeria.html">Galeria</a>
+                                <a class="nav-link text-light-emphasis" style="font-size: x-large;" aria-current="page" href="./galeria.html">Galeria</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-light-emphasis" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nuestro Menu</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="./entradas.html">Entradas</a></li>
-                                    <li><a class="dropdown-item" href="./principales.html">Principales</a></li>
-                                    <li><a class="dropdown-item" href="./postres.html">Postres</a></li>
-                                </ul>
-                                <li class="nav-item">
-                                    <a class="nav-link text-light-emphasis" href="./contacto.html">Contacto</a>
-                                </li>
+                                <a class="nav-link dropdown-toggle text-light-emphasis" style="font-size: x-large;" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Nuestro Menu</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item navbar-expand-lg" href="./entradas.html">Entradas</a></li>
+                                        <li><a class="dropdown-item" href="./principales.html">Principales</a></li>
+                                        <li><a class="dropdown-item" href="./postres.html">Postres</a></li>
+                                    </ul>
                             </li>
                         </ul>
+                        <a class="logo-contacto-navbar" href="./contacto.html"><img src="../assets/images/logo-wsp.png" alt="logo_wsap" style="height: 65px" width="65px"></a>
                     </div>
                 </div>
             </nav>
