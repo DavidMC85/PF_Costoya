@@ -6,7 +6,35 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.navbar-toggler:hover {
-    color: aliceblue;
+.nav-link {
+    color: rgb(255, 255, 255);
+}
+.nav-link-active {
+    text-decoration-color: brown
+}
+
+.nav-link:hover {
+    color: rgb(246, 145, 44);
     cursor: pointer;
+}
+.logo-contacto-navbar {
+    margin-right: 25px;
+}
+.dropdown-menu {
+    background-color: rgb(225, 131, 72);
+}
+.dropdown-item {
+    color:black;
+}
+.dropdown-item:active {
+    background-color:  rgb(225, 131, 72);
+}
+
+#dropdown {
+    text-decoration: underline;
+}
+
+#activo_dropdown {
+    background-color: rgb(190, 95, 27);
+    text-decoration: underline;
 }
