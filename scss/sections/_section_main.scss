@@ -1,8 +1,73 @@
+/*------------mixins-------------*/
+@mixin paddings($der,$izq,$arr,$abjo) {
+    padding-right: $der;
+    padding-left: $izq;
+    padding-top: $arr;
+    padding-bottom: $abjo;
+}
+    
+/*------------index---------------*/
+
 .main {
     text-align: center;
+    padding-top: 5px;
+}
+
+.linea {
+    margin-top: 0px;
+    padding-top: 0px;   
+    border-top: (5px transparent);
+    border-image: linear-gradient(to right, rgb(255, 179, 0), orange, rgb(197, 76, 0),rgb(0, 0, 0), rgb(0, 0, 0)) 1;
+    border-top-style: double;
+}
+
+.marco {
+    align-content: center;
+    max-width: fit-content;
+    max-height: fit-content;
+    margin: auto;
+    margin-top: 35px;
+    border: 8px solid black;
+    border-style: double;
 }
 
 
+.titulo_main {
+    font-size: 120px;
+    font-family: 'Rage Italic';
+    -webkit-text-stroke-width: 1px;
+    max-width: 1080px;
+    margin: auto;
+    margin-top: 80px;
+    color:  rgb(0, 0, 0);
+}
+
+.subtitulo_main {
+    @include paddings(0,0,50px,25px );
+    font-family: 'Satisfy', cursive;
+    -webkit-text-stroke: .5px rgb(71, 71, 71);
+    color: rgb(142, 142, 142);
+    font-size: 60px;
+}
+
+#portada {
+    align-items: center;
+    justify-content: center;
+    @include paddings(0,0,30px,50px );
+    width: 450px;
+    height: 400px;
+}
+
+.present {
+    @include paddings(0,0,40px,50px );
+    font-weight: bold;
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
+    -webkit-text-stroke: 1.3px black;
+    color: rgb(212, 212, 212);
+    max-width: 1200px;
+    margin: auto;
+}
 .article_main {
     font-family: 'Roboto', sans-serif;
     -webkit-text-stroke: .75px black;
@@ -10,53 +75,26 @@
     color: white;
     font-size: x-large;
 }
-
-.titulo_main {
-    font-size: 100px;
-    font-weight: 400;
-    font-family: 'Kaushan Script', cursive;
-    padding-top: 30px;
-    -webkit-text-stroke: 1.2px rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-}
-
-.subtitulo_main {
-    padding-top: 40px;
-    padding-bottom: 25px;
-    text-decoration: ;
-    font-family: 'Satisfy', cursive;
-    -webkit-text-stroke: .2px rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    font-size: 53px;
-}
-
-#portada {
-    align-items: center;
-    justify-content: center;
-    padding-top: 30px;
-    padding-bottom: 50px;
-    width: 450px;
-    height: 400px;
-}
-
-.present {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-weight: bold;
-    font-family: 'Caveat', cursive;
-    font-size: 40px;
-    -webkit-text-stroke: 1px black;
-    color: white;
+.txt_video {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .video {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    @include paddings(0,0,40px,40px );
     height: 400px;
     width: 550px;
 }
 
-/*------------CONDICIONES & CONTACTO--------------*/
+/*------------CONTACTO--------------*/
+
+.fondo_condiciones{
+    max-width: 1500px;
+    height:auto;
+    margin: auto;
+    background-color:rgba(246, 209, 161, 0.5);
+    padding-bottom: 25px;
+}
 
 .h1_contacto {
     text-align: center;
@@ -68,12 +106,55 @@
 }
 
 .h2_contacto {
+    @include paddings(0,0,40px,40px );
     text-align: center;
     margin-bottom: 50px;
-    padding-top: 25px;
-    padding-bottom: 25px;
     font-weight: 800;
     font-family: 'Lucida Sans'
+}
+
+/*formulario*/
+.formulario-bts {
+    @include paddings(0,0,15px,20px );
+    background-color: rgba(255, 211, 154, 0.546);
+    max-width: 1000px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+form {
+    @include paddings(15px,20px,0,0);
+    text-decoration: solid;
+    font-weight: 400;
+}
+
+section {
+    max-width: 100%;
+    max-height: auto;
+}
+
+.map-responsive {
+    display: flex;
+    justify-content: center;
+    overflow:hidden;
+    position:relative;
+    max-height: 500px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.row {
+    margin: auto;
+}
+
+iframe {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: auto;
+    max-height:380px;
+    max-width:390px;
 }
 
 .terminos {
@@ -81,9 +162,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/*---------------- condiciones ---------------*/
+
 .condiciones {
-    padding-bottom: 50px;
-    padding-left: 15px;
+    @include paddings(0,50px,0,15px);
 }
 
 
@@ -92,9 +174,7 @@
 }
 
 .subtitulo_condiciones {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 10px;
+    @include paddings(0,10px,15px,15px );
 }
 
 #p1 {
@@ -102,7 +182,7 @@
     text-decoration: chocolate;
     margin-right: 35px;
 }
-#h2c{
+#h2c {
     margin-left: 25px;
     text-decoration: black;
 }
@@ -113,6 +193,7 @@
 /*---------galeria-----------*/
 
 .img_galeria {
+    @include paddings(0,50px,25px,25px);
     display: grid;
     align-items: center;
     justify-content: center;
@@ -122,9 +203,6 @@
                 2fr));
     grid-auto-rows: auto;
     overflow: hidden;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 50px;
 }
 
 /* Animacion y Transformacion */
@@ -150,56 +228,9 @@
 }
 
 .img_cartas {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    @include paddings(0,0,25px,25px );
     display: grid;
     grid-template-columns: auto;
     grid-column: 2/3;
     image-resolution: auto;
 }
-
-.formulario-bts {
-    padding-top: 25px;
-    padding-bottom: 20px;
-    background-color: rgba(255, 211, 154, 0.546);
-    max-width: 1000px;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-}
-
-form{
-    padding-left: 15px;
-    padding-right: 15px;
-    text-decoration: solid;
-    font-weight: 400;
-}
-
-section {
-    max-width: 100%;
-    max-height: auto;
-}
-
-.map-responsive{
-    display: flex;
-    justify-content: center;
-    overflow:hidden;
-    position:relative;
-    max-height: 500px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.row {
-    margin: auto;
-}
-
-iframe{
-    display: flex;
-    position: relative;
-    align-items: center;
-    margin: auto;
-    max-height:380px;
-    max-width:390px;
-}
-

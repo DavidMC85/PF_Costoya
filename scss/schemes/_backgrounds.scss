@@ -1,77 +1,62 @@
 
+@mixin fondos($posicion,$metodo,$attach,$size){
+    background-position: $posicion;
+    background-repeat: $metodo;
+    background-attachment:$attach;
+    background-size: $size;
+}
+
+@mixin colores($color,$color_fondo) {
+    color: $color;
+    background-color: $color_fondo;
+}
+
+
 .background_image_home {
     background-image: url(../assets/images/backgorunds/background_home.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    @include fondos(center center, no-repeat,fixed,cover);
 }
 
 .background_image_entradas {
     background-image: url(../assets/images/backgorunds/background_galeria.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    @include fondos(center center, no-repeat,fixed,cover);
 }
 
 .background_image_postres {
     background-image: url(../assets/images/backgorunds/background_postres.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    @include fondos(center center, no-repeat,fixed,cover);
 }
 
 .background_image_principales {
     background-image: url(../assets/images/backgorunds/background_principales.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    @include fondos(center center, no-repeat,fixed,cover);
 }
 
 .background_image_galeria {
     background-image: url(../assets/images/backgorunds/background_entradas.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    @include fondos(center center, no-repeat,fixed,cover);
 }
 
 .background_image_contacto {
     background-image: url(../assets/images/backgorunds/background_contacto.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    color: rgb(48, 44, 29);
+    @include fondos(center center, no-repeat,fixed,cover);
 }
-
 .background_condiciones {
     background-image: url(../assets/images/backgorunds/background_extra.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    @include fondos(center center, no-repeat,fixed,cover);
 }
-
 
 .footer {
-    color: aliceblue;
-    background-color: black;
+    @include colores(aliceblue, black);
 }
 .foottxt {
-    color: beige;
-    background-color: black;
+    @include colores(beige, black);
 }
-
 .foottxt2 {
-    color: beige;
-    background-color: black;
+    @include colores(beige, black);
 }
 
-.fondo_condiciones {
+.fondo_condiciones{
     max-width: 1500px;
     height:auto;
     margin: auto;

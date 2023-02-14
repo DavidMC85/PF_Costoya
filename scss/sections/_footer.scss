@@ -1,14 +1,18 @@
+@mixin tamaño($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+}
+
 .footer {
+    @include tamaño(30px, 100%);
     display: flex;
     position: relative;
-    width: 100%;
     gap: 112px;
-    height: 30px;
     justify-content: center;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 0;
-    margin:auto;
+    margin: auto;
     text-align: center;
     margin-top: 25px;
 }

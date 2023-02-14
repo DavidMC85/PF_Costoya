@@ -18,18 +18,20 @@
 
 @media only screen and (max-width: 500px) and (min-width: 341px) {
     .titulo_main {
-        font-size: 70px;
-        padding-bottom: 30px;
+        font-size:80px;
+        margin-top: 20px;
+        margin-right: 5px;
+        margin-top: 15px;
         -webkit-text-stroke: 0px black;
     }
 }
 @media only screen and (max-width: 500px) and (min-width: 341px) {
     .subtitulo_main {
-        font-size: 30px;
+        font-size: 40px;
     }
 }
 @media only screen and (max-width: 500px) and (min-width: 341px) {
-    .presentacion {
+    .present {
         font-size: 20px;
     }
 }
