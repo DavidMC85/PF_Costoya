@@ -8,6 +8,15 @@
     }
 }
 @media only screen and (max-width: 500px) and (min-width: 341px) {
+    .marco { 
+        margin-right: 5px;
+        margin-left: 5px;
+        padding-bottom: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) and (min-width: 341px) {
     .logo-contacto-navbar {
         max-width: 35px;
         max-height: 35px;

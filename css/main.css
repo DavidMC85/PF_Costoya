@@ -88,8 +88,8 @@
   margin-top: 0px;
   padding-top: 0px;
   border-top: 5px transparent;
-  -o-border-image: linear-gradient(to right, rgb(255, 179, 0), orange, rgb(197, 76, 0), rgb(0, 0, 0), rgb(0, 0, 0)) 1;
-     border-image: linear-gradient(to right, rgb(255, 179, 0), orange, rgb(197, 76, 0), rgb(0, 0, 0), rgb(0, 0, 0)) 1;
+  -o-border-image: linear-gradient(to right, rgb(255, 191, 0), rgb(255, 179, 0), rgb(231, 108, 0), rgb(185, 86, 0), rgb(116, 45, 1), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)) 1;
+     border-image: linear-gradient(to right, rgb(255, 191, 0), rgb(255, 179, 0), rgb(231, 108, 0), rgb(185, 86, 0), rgb(116, 45, 1), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)) 1;
   border-top-style: double;
 }
 
@@ -470,6 +470,13 @@ a:hover {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+}
+@media only screen and (max-width: 500px) and (min-width: 341px) {
+  .marco {
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-bottom: 10px;
   }
 }
 @media only screen and (max-width: 500px) and (min-width: 341px) {
