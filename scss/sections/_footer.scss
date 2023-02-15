@@ -7,13 +7,13 @@
     @include tamaño(30px, 100%);
     display: flex;
     position: relative;
-    gap: 112px;
+    text-align: center;
     justify-content: center;
+    gap: 112px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 0;
     margin: auto;
-    text-align: center;
     margin-top: 25px;
 }
 
@@ -26,11 +26,11 @@
 }
 
 .foottxt2 {
-    margin-bottom: auto;
     display: flex;
-    padding-top: 14px;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: auto;
+    padding-top: 14px;
 }
 
 a {

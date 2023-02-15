@@ -27,8 +27,10 @@
     max-height: fit-content;
     margin: auto;
     margin-top: 35px;
+    margin-bottom: 80px;
     border: 8px solid black;
     border-style: double;
+    padding-bottom: 3u0px;
 }
 
 
@@ -39,7 +41,7 @@
     max-width: 1080px;
     margin: auto;
     margin-top: 80px;
-    color:  rgb(0, 0, 0);
+    color:  rgb(33, 33, 33);
 }
 
 .subtitulo_main {
@@ -113,7 +115,7 @@
     font-family: 'Lucida Sans'
 }
 
-/*formulario*/
+/*------------------formulario--------------------*/
 .formulario-bts {
     @include paddings(0,0,15px,20px );
     background-color: rgba(255, 211, 154, 0.546);
@@ -156,12 +158,6 @@ iframe {
     max-height:380px;
     max-width:390px;
 }
-
-.terminos {
-    color: rgb(22, 38, 146);
-    font-family: 'Roboto', sans-serif;
-}
-
 /*---------------- condiciones ---------------*/
 
 .condiciones {
@@ -189,8 +185,12 @@ iframe {
 #lista {
     padding-left: 0%;
 }
+.terminos {
+    color: rgb(22, 38, 146);
+    font-family: 'Roboto', sans-serif;
+}
 
-/*---------galeria-----------*/
+/*------------------galeria--------------------*/
 
 .img_galeria {
     @include paddings(0,50px,25px,25px);
@@ -205,7 +205,7 @@ iframe {
     overflow: hidden;
 }
 
-/* Animacion y Transformacion */
+/* ----------------Animacion y Transformacion-------------- */
 .imgimg {
     width: 450px;
     height: 280px;
@@ -218,7 +218,7 @@ iframe {
     transform: scale(1.2);
 }
 
-/*menu de cartas*/
+/*----------------------menu de cartas----------------------*/
 
 .fondo_cartas {
     display: grid;

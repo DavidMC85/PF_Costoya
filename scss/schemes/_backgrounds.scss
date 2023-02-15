@@ -1,65 +1,56 @@
 
-@mixin fondos($posicion,$metodo,$attach,$size){
-    background-position: $posicion;
-    background-repeat: $metodo;
-    background-attachment:$attach;
-    background-size: $size;
-}
-
 @mixin colores($color,$color_fondo) {
     color: $color;
     background-color: $color_fondo;
 }
-
-
+%fondos {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.background_image_home, .background_condiciones, .background_image_contacto, .background_image_entradas, .background_image_galeria, .background_image_postres, .background_image_principales {
+    @extend %fondos;
+}
 .background_image_home {
     background-image: url(../assets/images/backgorunds/background_home.jpg);
-    @include fondos(center center, no-repeat,fixed,cover);
 }
 
 .background_image_entradas {
     background-image: url(../assets/images/backgorunds/background_galeria.jpg);
-    @include fondos(center center, no-repeat,fixed,cover);
 }
 
 .background_image_postres {
     background-image: url(../assets/images/backgorunds/background_postres.jpg);
-    @include fondos(center center, no-repeat,fixed,cover);
 }
 
 .background_image_principales {
     background-image: url(../assets/images/backgorunds/background_principales.jpg);
-    @include fondos(center center, no-repeat,fixed,cover);
 }
 
 .background_image_galeria {
     background-image: url(../assets/images/backgorunds/background_entradas.jpg);
-    @include fondos(center center, no-repeat,fixed,cover);
 }
 
 .background_image_contacto {
     background-image: url(../assets/images/backgorunds/background_contacto.jpg);
-    @include fondos(center center, no-repeat,fixed,cover);
 }
 .background_condiciones {
     background-image: url(../assets/images/backgorunds/background_extra.jpg);
-    @include fondos(center center, no-repeat,fixed,cover);
 }
 
-.footer {
-    @include colores(aliceblue, black);
+#footer {
+    background-image: url(/assets/images/backgorunds/flecha.jpg );
+    background-size: 100% 165px;
+    background-position: center center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    max-height: 165px;
+    max-width: auto;
 }
 .foottxt {
-    @include colores(beige, black);
+    @include colores(beige,0);
 }
 .foottxt2 {
-    @include colores(beige, black);
-}
-
-.fondo_condiciones{
-    max-width: 1500px;
-    height:auto;
-    margin: auto;
-    background-color:rgba(246, 209, 161, 0.5);
-    padding-bottom: 25px;
+    @include colores(beige,0);
 }

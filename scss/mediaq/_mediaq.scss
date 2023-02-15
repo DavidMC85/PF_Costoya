@@ -1,12 +1,73 @@
 
 /*---------------------------INDEX----------------------------*/
 
+
 @media only screen and (max-width: 500px) and (min-width: 341px) {
     .background_home { 
         width: 100%;
         object-fit: cover;
     }
 }
+/*--------------------navbar-----------------------------*/
+
+@media only screen and (max-width: 500px) and (min-width: 260px) {
+    #bootstrap_navbar { 
+        background-size: 100% 100%;
+        background-position: center center;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 501px) {
+    #bootstrap_navbar { 
+        background-size: 100% 100%;
+        background-position: center center;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 801px) {
+    #bootstrap_navbar { 
+        background-size: 100% 100%;
+        background-position: center center;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        }
+}
+
+/*-----------------navbar contacto---------------------*/
+
+@media only screen and (max-width: 500px) and (min-width: 341px) {
+#bootstrap_navbar_contacto {
+    background-image: url(/assets/images/backgorunds/flacha_corta.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: scroll;
+    }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 501px) {
+    #bootstrap_navbar_contacto {
+        background-image: url(/assets/images/backgorunds/flacha_corta.jpg);
+        background-size: 100% 100%;
+        background-position: center center;
+        background-attachment: scroll;
+        }
+    }
+
+    @media only screen and (max-width: 1200px) and (min-width: 801px) {
+        #bootstrap_navbar_contacto {
+            background-image: url(/assets/images/backgorunds/flacha_corta.jpg);
+            background-size: 100% 100%;
+            background-position: center center;
+            background-attachment: scroll;
+            }
+        }
+
+/*------------------marco index--------------------*/
+
 @media only screen and (max-width: 500px) and (min-width: 341px) {
     .marco { 
         margin-right: 5px;

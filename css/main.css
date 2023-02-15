@@ -6,18 +6,18 @@
   list-style: none;
 }
 
-#bootstrap_navbar {
-  background-image: url(/assets/images/backgorunds/degrade_flecha.jpg);
+#bootstrap_navbar, #bootstrap_navbar_contacto {
   background-size: 2160px 150px;
   background-position: center center;
   background-attachment: scroll;
 }
 
+#bootstrap_navbar {
+  background-image: url(/assets/images/backgorunds/degrade_flecha.jpg);
+}
+
 #bootstrap_navbar_contacto {
   background-image: url(/assets/images/backgorunds/flacha_corta.jpg);
-  background-size: 2160px 150px;
-  background-position: center center;
-  background-attachment: scroll;
 }
 
 .container-fluid {
@@ -101,8 +101,10 @@
   max-height: fit-content;
   margin: auto;
   margin-top: 35px;
+  margin-bottom: 80px;
   border: 8px solid black;
   border-style: double;
+  padding-bottom: 3u0px;
 }
 
 .titulo_main {
@@ -112,7 +114,7 @@
   max-width: 1080px;
   margin: auto;
   margin-top: 80px;
-  color: rgb(0, 0, 0);
+  color: rgb(33, 33, 33);
 }
 
 .subtitulo_main {
@@ -202,7 +204,7 @@
   font-family: "Lucida Sans";
 }
 
-/*formulario*/
+/*------------------formulario--------------------*/
 .formulario-bts {
   padding-right: 0;
   padding-left: 0;
@@ -253,11 +255,6 @@ iframe {
   max-width: 390px;
 }
 
-.terminos {
-  color: rgb(22, 38, 146);
-  font-family: "Roboto", sans-serif;
-}
-
 /*---------------- condiciones ---------------*/
 .condiciones {
   padding-right: 0;
@@ -294,7 +291,12 @@ iframe {
   padding-left: 0%;
 }
 
-/*---------galeria-----------*/
+.terminos {
+  color: rgb(22, 38, 146);
+  font-family: "Roboto", sans-serif;
+}
+
+/*------------------galeria--------------------*/
 .img_galeria {
   padding-right: 0;
   padding-left: 50px;
@@ -309,7 +311,7 @@ iframe {
   overflow: hidden;
 }
 
-/* Animacion y Transformacion */
+/* ----------------Animacion y Transformacion-------------- */
 .imgimg {
   width: 450px;
   height: 280px;
@@ -322,7 +324,7 @@ iframe {
   transform: scale(1.2);
 }
 
-/*menu de cartas*/
+/*----------------------menu de cartas----------------------*/
 .fondo_cartas {
   display: grid;
   grid-template-columns: auto;
@@ -346,13 +348,13 @@ iframe {
   width: 100%;
   display: flex;
   position: relative;
-  gap: 112px;
+  text-align: center;
   justify-content: center;
+  gap: 112px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 0;
   margin: auto;
-  text-align: center;
   margin-top: 25px;
 }
 
@@ -365,11 +367,11 @@ iframe {
 }
 
 .foottxt2 {
-  margin-bottom: auto;
   display: flex;
-  padding-top: 14px;
   justify-content: center;
   font-family: "Roboto", sans-serif;
+  margin-bottom: auto;
+  padding-top: 14px;
 }
 
 a {
@@ -385,83 +387,59 @@ a:hover {
   color: aliceblue;
 }
 
-.background_image_home {
-  background-image: url(../assets/images/backgorunds/background_home.jpg);
+.background_image_home, .background_condiciones, .background_image_contacto, .background_image_entradas, .background_image_galeria, .background_image_postres, .background_image_principales {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+
+.background_image_home {
+  background-image: url(../assets/images/backgorunds/background_home.jpg);
 }
 
 .background_image_entradas {
   background-image: url(../assets/images/backgorunds/background_galeria.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 .background_image_postres {
   background-image: url(../assets/images/backgorunds/background_postres.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 .background_image_principales {
   background-image: url(../assets/images/backgorunds/background_principales.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 .background_image_galeria {
   background-image: url(../assets/images/backgorunds/background_entradas.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 .background_image_contacto {
   background-image: url(../assets/images/backgorunds/background_contacto.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 .background_condiciones {
   background-image: url(../assets/images/backgorunds/background_extra.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
-.footer {
-  color: aliceblue;
-  background-color: black;
+#footer {
+  background-image: url(/assets/images/backgorunds/flecha.jpg);
+  background-size: 100% 165px;
+  background-position: center center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  max-height: 165px;
+  max-width: auto;
 }
 
 .foottxt {
   color: beige;
-  background-color: black;
+  background-color: 0;
 }
 
 .foottxt2 {
   color: beige;
-  background-color: black;
-}
-
-.fondo_condiciones {
-  max-width: 1500px;
-  height: auto;
-  margin: auto;
-  background-color: rgba(246, 209, 161, 0.5);
-  padding-bottom: 25px;
+  background-color: 0;
 }
 
 /*---------------------------INDEX----------------------------*/
@@ -472,6 +450,57 @@ a:hover {
        object-fit: cover;
   }
 }
+/*--------------------navbar-----------------------------*/
+@media only screen and (max-width: 500px) and (min-width: 260px) {
+  #bootstrap_navbar {
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 501px) {
+  #bootstrap_navbar {
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 801px) {
+  #bootstrap_navbar {
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+  }
+}
+/*-----------------navbar contacto---------------------*/
+@media only screen and (max-width: 500px) and (min-width: 341px) {
+  #bootstrap_navbar_contacto {
+    background-image: url(/assets/images/backgorunds/flacha_corta.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: scroll;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 501px) {
+  #bootstrap_navbar_contacto {
+    background-image: url(/assets/images/backgorunds/flacha_corta.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: scroll;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 801px) {
+  #bootstrap_navbar_contacto {
+    background-image: url(/assets/images/backgorunds/flacha_corta.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: scroll;
+  }
+}
+/*------------------marco index--------------------*/
 @media only screen and (max-width: 500px) and (min-width: 341px) {
   .marco {
     margin-right: 5px;

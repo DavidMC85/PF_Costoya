@@ -5,18 +5,20 @@
     margin-bottom: $abajo;
 }
 
-#bootstrap_navbar {
-    background-image: url(/assets/images/backgorunds/degrade_flecha.jpg);
+%navbar {
     background-size: 2160px 150px;
     background-position: center center;
     background-attachment: scroll;
 }
 
+#bootstrap_navbar, #bootstrap_navbar_contacto {
+    @extend %navbar;
+} 
+#bootstrap_navbar {
+    background-image: url(/assets/images/backgorunds/degrade_flecha.jpg);
+}
 #bootstrap_navbar_contacto {
     background-image: url(/assets/images/backgorunds/flacha_corta.jpg);
-    background-size: 2160px 150px;
-    background-position: center center;
-    background-attachment: scroll;
 }
 
 .container-fluid {
