@@ -100,9 +100,11 @@
   max-height: fit-content;
   margin: auto;
   margin: 15px 15px 15px 15px;
-  border: 8px solid black;
+  border: 8px solid transparent;
   border-style: double;
-  padding-bottom: 3u0px;
+  padding-bottom: 30px;
+  -o-border-image: linear-gradient(to right, rgb(255, 191, 0), rgb(255, 179, 0), rgb(231, 108, 0), rgb(185, 86, 0), rgb(116, 45, 1), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)) 1;
+     border-image: linear-gradient(to right, rgb(255, 191, 0), rgb(255, 179, 0), rgb(231, 108, 0), rgb(185, 86, 0), rgb(116, 45, 1), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)) 1;
 }
 
 .marco_medio {
@@ -113,8 +115,10 @@
   max-height: fit-content;
   margin: auto;
   margin: 15px 15px 15px 15px;
-  border: 8px solid rgb(142, 78, 0);
+  border: 8px solid transparent;
   border-style: double;
+  -o-border-image: linear-gradient(to right, rgb(255, 191, 0), rgb(255, 179, 0), rgb(231, 108, 0), rgb(185, 86, 0), rgb(116, 45, 1), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)) 1;
+     border-image: linear-gradient(to right, rgb(255, 191, 0), rgb(255, 179, 0), rgb(231, 108, 0), rgb(185, 86, 0), rgb(116, 45, 1), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)) 1;
 }
 
 .marco_exterior {
@@ -126,8 +130,10 @@
   margin: auto;
   margin-top: 85px;
   margin-bottom: 80px;
-  border: 8px solid rgb(255, 134, 4);
+  border: 8px solid transparent;
   border-style: double;
+  -o-border-image: linear-gradient(to right, rgb(255, 191, 0), rgb(255, 179, 0), rgb(231, 108, 0), rgb(185, 86, 0), rgb(116, 45, 1), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)) 1;
+     border-image: linear-gradient(to right, rgb(255, 191, 0), rgb(255, 179, 0), rgb(231, 108, 0), rgb(185, 86, 0), rgb(116, 45, 1), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)) 1;
 }
 
 .titulo_main {
