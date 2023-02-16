@@ -1,5 +1,5 @@
 
-/*---------------------------INDEX----------------------------*/
+/*------------------------BACKGROUND INDEX-------------------------*/
 
 
 @media only screen and (max-width: 500px) and (min-width: 341px) {
@@ -8,7 +8,8 @@
         object-fit: cover;
     }
 }
-/*--------------------navbar-----------------------------*/
+
+/*---------------------------NAVBAR-----------------------------*/
 
 @media only screen and (max-width: 500px) and (min-width: 260px) {
     #bootstrap_navbar { 
@@ -37,7 +38,7 @@
         }
 }
 
-/*-----------------navbar contacto---------------------*/
+/*-----------------------NAVBAR CONTACTO---------------------*/
 
 @media only screen and (max-width: 500px) and (min-width: 341px) {
 #bootstrap_navbar_contacto {
@@ -57,44 +58,14 @@
         }
     }
 
-    @media only screen and (max-width: 1200px) and (min-width: 801px) {
-        #bootstrap_navbar_contacto {
-            background-image: url(/assets/images/backgorunds/flacha_corta.jpg);
-            background-size: 100% 100%;
-            background-position: center center;
-            background-attachment: scroll;
-            }
+@media only screen and (max-width: 1200px) and (min-width: 801px) {
+    #bootstrap_navbar_contacto {
+        background-image: url(/assets/images/backgorunds/flacha_corta.jpg);
+        background-size: 100% 100%;
+        background-position: center center;
+        background-attachment: scroll;
         }
-
-/*------------------marco index--------------------*/
-
-@media only screen and (max-width: 500px) and (min-width: 341px) {
-    .marco_interior { 
-        margin-right: 5px;
-        margin-left: 5px;
-
-        border: 2px solid rgb(0, 0, 0);
     }
-    
-}
-
-@media only screen and (max-width: 500px) and (min-width: 341px) {
-    .marco_medio { 
-        margin-right: 5px;
-        margin-left: 5px;
-
-        border: 2px solid rgb(124, 64, 0);
-    }
-}
-
-@media only screen and (max-width: 500px) and (min-width: 341px) {
-    .marco_exterior { 
-        margin-right: 5px;
-        margin-left: 5px;
-        margin-bottom: 10px;
-        border: 2px solid rgb(255, 134, 4);
-    }
-}
 
 @media only screen and (max-width: 500px) and (min-width: 341px) {
     .logo-contacto-navbar {
@@ -105,17 +76,93 @@
     }
 }
 
+/*----------------------MARCOS INDEX-----------------------*/
+
+@media only screen and (max-width: 500px) and (min-width: 341px) {
+    .marco_interior { 
+        margin: auto;
+        border: 2px solid rgb(0, 0, 0);
+        padding: 1%;
+    }
+    
+}
+
+@media only screen and (max-width: 500px) and (min-width: 341px) {
+    .marco_medio { 
+        margin: auto;
+        border: 2px solid rgb(124, 64, 0);
+        padding: 2%;
+    }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 341px) {
+    .marco_exterior { 
+        margin-left: 1%;
+        margin-right: 1%;
+        padding: 2%;
+        border: 2px solid rgb(255, 134, 4);
+    }
+}
+
+@media only screen and (max-width: 980px) and (min-width: 501px) {
+    .marco_interior { 
+        margin-right: 8px;
+        margin-left: 8px;
+        border: 5px solid rgb(0, 0, 0);
+    }  
+}
+
+@media only screen and (max-width: 980px) and (min-width: 501px) {
+    .marco_medio { 
+        margin-right: 8px;
+        margin-left: 8px;
+        border: 5px solid rgb(124, 64, 0);
+    }
+}
+
+@media only screen and (max-width: 980px) and (min-width: 501px) {
+    .marco_exterior { 
+        margin-right: 8px;
+        margin-left: 8px;
+        margin-bottom: 10px;
+        border: 5px solid rgb(255, 134, 4);
+    }
+}
+
+/*--------------------- TITULO & SUBTITULOS ----------------------*/
+
 @media only screen and (max-width: 500px) and (min-width: 341px) {
     .titulo_main {
         font-size:65px;
         margin-top: 20px;
         margin-right: 5px;
+        margin-top: 35px;
+    }
+}
+
+@media only screen and (max-width: 820px) and (min-width: 501px) {
+    .titulo_main {
+        font-size:85px;
+        margin-top: 20px;
+        margin-right: 5px;
         margin-top: 15px;
     }
 }
+
 @media only screen and (max-width: 500px) and (min-width: 341px) {
     .subtitulo_main {
         font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 820px) and (min-width: 501px) {
+    .subtitulo_main {
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 820px) and (min-width: 501px) {
+    .present {
+        font-size: 25px;
     }
 }
 @media only screen and (max-width: 500px) and (min-width: 341px) {
@@ -124,16 +171,15 @@
     }
 }
 
-
-@media only screen and (max-width: 980px) and (min-width: 821px) {  
-    .portada {
+@media only screen and (max-width: 820px) and (min-width: 501px) {  
+    #portada {
         max-width: 450px;
         max-height: 400px;
     }
 }  
 
 @media only screen and (max-width: 820px) and (min-width: 621px) {
-    .portada {
+    #portada {
         max-width: 400px;
         max-height: 320;
     }
@@ -141,23 +187,30 @@
 }  
 
 @media only screen and (max-width: 620px) and (min-width: 501px) { 
-    .portada {
+    #portada {
         max-width: 350px;
-        max-height: 300;
+        max-height: 250PX;
+        padding: 0%;
+        margin-top: 20px;
     }
+    .txt_video{
+        margin-top: 20px;
+    } 
 }  
 
 @media only screen and (max-width: 500px) and (min-width: 341px) {  
-    .portada {
+    #portada {
         max-width: 300px;
         max-height: 260px;
+        padding: 0%;
     }
 }  
 
 @media only screen and (max-width: 340px) and (min-width: 5px)  {  
-    .portada {
+    #portada {
         max-width: 300px;
         max-height: 220;
+        padding: 0%;
     }
 }
 
@@ -203,11 +256,28 @@
 } 
 
 /*---------------------------GALERIA---------------------------*/
+@media only screen and (max-width:1400px) and (min-width:980px){
+    .titulo_galeria {
+        font-size: 200%;
+    }
+}
+@media only screen and (max-width:980px) and (min-width:501px){
+    .titulo_galeria{
+        font-size: 180%;
+    }
+}
+@media only screen and (max-width:501px) and (min-width:240px){
+    .titulo_galeria {
+        font-size: 150%;
+    }    
+}
+
+
 
 @media only screen and (max-width:1400px) and (min-width:821px) {  
     .imgimg {
-        max-width: 580px;
-        max-height: 420px;
+        max-width: 600px;
+        max-height: 440px;
         margin: auto;
     }
 }  
@@ -216,7 +286,7 @@
     .imgimg {
         display: flex;
         max-width: 400px;
-        max-height: 320px;
+        max-height: 310px;
         align-items: center;
         margin: auto;
     }
@@ -228,8 +298,8 @@
 @media only screen and (max-width: 620px) and (min-width: 501px) { 
     .imgimg {
         display: grid;
-        max-width: 350px;
-        max-height: 300;
+        max-width: 370px;
+        max-height: 250px;
     }
 }  
 
@@ -238,6 +308,9 @@
         display: grid;
         max-width: 340px;
         max-height: 220px;
+    }
+    .imgimg:hover {
+        transform: none
     }
 }  
 
