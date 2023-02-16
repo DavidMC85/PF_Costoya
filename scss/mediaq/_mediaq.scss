@@ -236,7 +236,6 @@
 @media only screen and (max-width: 500px) and (min-width: 260px) {  
     .imgimg {
         display: grid;
-        margin-left: 5px;
         max-width: 340px;
         max-height: 220px;
     }
@@ -286,10 +285,9 @@
 
 @media only screen and (max-width: 1200px) and (min-width: 621px) {
     .carta_postre {
-        max-width: 640px;
         max-height: auto;
-        margin-top: 100px;
-        margin-bottom: 100px;
+        margin-top: 150px;
+        margin-bottom: 150px;
         touch-action: auto;
         border: 12px solid transparent;
         border-image: linear-gradient(to right, rgb(255, 191, 0),rgb(255, 179, 0), rgb(231, 108, 0),rgb(185, 86, 0), rgb(116, 45, 1), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)) 1;
@@ -299,9 +297,9 @@
 
 @media only screen and (max-width: 620px) and (min-width: 501px) { 
     .carta_postre {
-        margin-top: 100px;
-        margin-bottom: 100px;
-        max-width: 520px;
+        margin-top: 250px;
+        margin-bottom: 250px;
+        max-width: 480px;
         max-height: auto;
         border: 8px solid transparent;
         border-image: linear-gradient(to right, rgb(255, 191, 0),rgb(255, 179, 0), rgb(231, 108, 0),rgb(185, 86, 0), rgb(116, 45, 1), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)) 1;
@@ -310,8 +308,8 @@
 
 @media only screen and (max-width: 500px) and (min-width: 260px) {  
     .carta_postre {
-        margin-top: 130px;
-        margin-bottom: 130px;
+        margin-top: 200px;
+        margin-bottom: 200px;
         max-width: 330px;
         max-height:auto ;
         touch-action: auto;

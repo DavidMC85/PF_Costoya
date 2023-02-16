@@ -21,6 +21,14 @@
     border-top-style: double;
 }
 
+.linea_contacto {
+    margin-top: 0px;
+    padding-top: 0px;   
+    border-top: (5px transparent);
+    border-image: linear-gradient(to left, rgb(255, 191, 0),rgb(255, 179, 0), rgb(231, 108, 0),rgb(185, 86, 0), rgb(116, 45, 1), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)) 1;
+    border-top-style: double;
+}
+
 .marco_interior {
     align-content: center;
     max-width: fit-content;
@@ -31,7 +39,6 @@
     border-style: double;
     padding-bottom: 30px;
     border-image: linear-gradient(to right, rgb(255, 191, 0),rgb(255, 179, 0), rgb(231, 108, 0),rgb(185, 86, 0), rgb(116, 45, 1), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)) 1;
-
 }
 
 .marco_medio {
@@ -135,14 +142,6 @@
 
 /*------------CONTACTO--------------*/
 
-.fondo_condiciones{
-    max-width: 1500px;
-    height:auto;
-    margin: auto;
-    background-color:rgba(246, 209, 161, 0.5);
-    padding-bottom: 25px;
-}
-
 .h1_contacto {
     text-align: center;
     text-decoration-color: white;
@@ -168,6 +167,7 @@
     align-items: center;
     justify-content: center;
     margin: auto;
+    text-align: left;
 }
 
 form {
@@ -205,10 +205,22 @@ iframe {
 }
 /*---------------- condiciones ---------------*/
 
-.condiciones {
-    @include paddings(0,50px,0,15px);
+.fondo_condiciones{
+    max-width: 1400px;
+    height:auto;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color:rgba(246, 209, 161, 0.5);
+    padding-bottom: 25px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font: bold
 }
 
+.condiciones {
+    @include paddings(0px,50px,0px,15px);
+}
 
 .titulo_condiciones {
     padding-left: 10px;
@@ -217,7 +229,9 @@ iframe {
 .subtitulo_condiciones {
     @include paddings(0,10px,15px,15px );
 }
-
+.secciones_condiciones {
+    text-decoration: underline;
+}
 #p1 {
     margin-left: 35px;
     text-decoration: chocolate;
@@ -244,26 +258,22 @@ iframe {
     justify-content: center;
     align-content: center;
     gap: 3.8rem;
-    grid-template-columns: repeat(auto-fit,
-            minmax(25rem,
-                2fr));
+    grid-template-columns: repeat(auto-fit,minmax(35rem,2fr));
     grid-auto-rows: auto;
     overflow: hidden;
-
-    
 }
 
 /* ----------------Animacion y Transformacion-------------- */
 .imgimg {
-    width: 490px;
-    height: 310px;
+    display: grid;
+    width: 590px;
+    height: 410px;
     max-width: 490px;
     max-height: 310px;
     transition: transform .3s ease-in-out;
     border: 5px solid transparent;
     border-image: linear-gradient(to right, rgb(255, 191, 0),rgb(255, 179, 0), rgb(231, 108, 0),rgb(185, 86, 0), rgb(116, 45, 1), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)) 1;
     margin: auto;
-
 }
 
 .imgimg:hover {
@@ -281,10 +291,12 @@ iframe {
 
 .img_cartas {
     @include paddings(0,0,25px,25px );
-    display: grid;
-    grid-template-columns: auto;
-    grid-column: 2/3;
-    image-resolution: auto;
+        display: flex;
+        position: relative;
+        align-items: center;
+        align-content: center;
+        margin: auto;
+
 }
 
 .carta_entradas {
@@ -295,10 +307,12 @@ iframe {
 }
 
 .carta_postre {
+    max-height: 800px;
+    max-width: auto; 
     border: 15px solid transparent;
     border-image: linear-gradient(to right, rgb(255, 191, 0),rgb(255, 179, 0), rgb(231, 108, 0),rgb(185, 86, 0), rgb(116, 45, 1), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)) 1;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 .carta_principales {
     border: 15px solid transparent;

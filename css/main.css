@@ -92,6 +92,15 @@
   border-top-style: double;
 }
 
+.linea_contacto {
+  margin-top: 0px;
+  padding-top: 0px;
+  border-top: 5px transparent;
+  -o-border-image: linear-gradient(to left, rgb(255, 191, 0), rgb(255, 179, 0), rgb(231, 108, 0), rgb(185, 86, 0), rgb(116, 45, 1), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)) 1;
+     border-image: linear-gradient(to left, rgb(255, 191, 0), rgb(255, 179, 0), rgb(231, 108, 0), rgb(185, 86, 0), rgb(116, 45, 1), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)) 1;
+  border-top-style: double;
+}
+
 .marco_interior {
   align-content: center;
   max-width: -moz-fit-content;
@@ -224,14 +233,6 @@
 }
 
 /*------------CONTACTO--------------*/
-.fondo_condiciones {
-  max-width: 1500px;
-  height: auto;
-  margin: auto;
-  background-color: rgba(246, 209, 161, 0.5);
-  padding-bottom: 25px;
-}
-
 .h1_contacto {
   text-align: center;
   text-decoration-color: white;
@@ -263,6 +264,7 @@
   align-items: center;
   justify-content: center;
   margin: auto;
+  text-align: left;
 }
 
 form {
@@ -304,10 +306,23 @@ iframe {
 }
 
 /*---------------- condiciones ---------------*/
+.fondo_condiciones {
+  max-width: 1400px;
+  height: auto;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: rgba(246, 209, 161, 0.5);
+  padding-bottom: 25px;
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font: bold;
+}
+
 .condiciones {
-  padding-right: 0;
+  padding-right: 0px;
   padding-left: 50px;
-  padding-top: 0;
+  padding-top: 0px;
   padding-bottom: 15px;
 }
 
@@ -320,6 +335,10 @@ iframe {
   padding-left: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.secciones_condiciones {
+  text-decoration: underline;
 }
 
 #p1 {
@@ -355,15 +374,16 @@ iframe {
   justify-content: center;
   align-content: center;
   gap: 3.8rem;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 2fr));
   grid-auto-rows: auto;
   overflow: hidden;
 }
 
 /* ----------------Animacion y Transformacion-------------- */
 .imgimg {
-  width: 490px;
-  height: 310px;
+  display: grid;
+  width: 590px;
+  height: 410px;
   max-width: 490px;
   max-height: 310px;
   transition: transform 0.3s ease-in-out;
@@ -390,10 +410,11 @@ iframe {
   padding-left: 0;
   padding-top: 25px;
   padding-bottom: 25px;
-  display: grid;
-  grid-template-columns: auto;
-  grid-column: 2/3;
-  image-resolution: auto;
+  display: flex;
+  position: relative;
+  align-items: center;
+  align-content: center;
+  margin: auto;
 }
 
 .carta_entradas {
@@ -405,11 +426,13 @@ iframe {
 }
 
 .carta_postre {
+  max-height: 800px;
+  max-width: auto;
   border: 15px solid transparent;
   -o-border-image: linear-gradient(to right, rgb(255, 191, 0), rgb(255, 179, 0), rgb(231, 108, 0), rgb(185, 86, 0), rgb(116, 45, 1), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)) 1;
      border-image: linear-gradient(to right, rgb(255, 191, 0), rgb(255, 179, 0), rgb(231, 108, 0), rgb(185, 86, 0), rgb(116, 45, 1), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)) 1;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 
 .carta_principales {
@@ -721,7 +744,6 @@ a:hover {
 @media only screen and (max-width: 500px) and (min-width: 260px) {
   .imgimg {
     display: grid;
-    margin-left: 5px;
     max-width: 340px;
     max-height: 220px;
   }
@@ -765,10 +787,9 @@ a:hover {
 /*-------------------------MEDIAS Q DE CARTAS DE POSTRES------------------------*/
 @media only screen and (max-width: 1200px) and (min-width: 621px) {
   .carta_postre {
-    max-width: 640px;
     max-height: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 150px;
+    margin-bottom: 150px;
     touch-action: auto;
     border: 12px solid transparent;
     -o-border-image: linear-gradient(to right, rgb(255, 191, 0), rgb(255, 179, 0), rgb(231, 108, 0), rgb(185, 86, 0), rgb(116, 45, 1), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)) 1;
@@ -777,9 +798,9 @@ a:hover {
 }
 @media only screen and (max-width: 620px) and (min-width: 501px) {
   .carta_postre {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    max-width: 520px;
+    margin-top: 250px;
+    margin-bottom: 250px;
+    max-width: 480px;
     max-height: auto;
     border: 8px solid transparent;
     -o-border-image: linear-gradient(to right, rgb(255, 191, 0), rgb(255, 179, 0), rgb(231, 108, 0), rgb(185, 86, 0), rgb(116, 45, 1), rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0)) 1;
@@ -788,8 +809,8 @@ a:hover {
 }
 @media only screen and (max-width: 500px) and (min-width: 260px) {
   .carta_postre {
-    margin-top: 130px;
-    margin-bottom: 130px;
+    margin-top: 200px;
+    margin-bottom: 200px;
     max-width: 330px;
     max-height: auto;
     touch-action: auto;
