@@ -29,12 +29,10 @@
     color: rgb(127, 47, 0);
 }
 
-
 .nav-link:hover {
     color: rgb(213, 213, 213);
     cursor: pointer;
 }
-
 
 .logo-contacto-navbar {
     @include margenes(25px,0 ,0 ,0 );
@@ -59,8 +57,6 @@
     background-color: rgb(190, 95, 27);
     text-decoration: underline;
 }
-
-
 
 .wsap_pagina_activa {
     @include margenes(25px,0 ,0 ,0 );
