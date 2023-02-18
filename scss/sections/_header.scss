@@ -23,10 +23,12 @@
 
 .container-fluid {
     font-family: 'Roboto', sans-serif;
+    font-size: xx-large;
 }
 
 .nav-link {
-    color: rgb(127, 47, 0);
+    color: rgb(125, 125, 125);
+    -webkit-text-stroke: 1.3px black;
 }
 
 .nav-link:hover {
