@@ -21,14 +21,15 @@
 
 .container-fluid {
   font-family: "Roboto", sans-serif;
+  font-size: xx-large;
 }
 
 .nav-link {
-  color: rgb(127, 47, 0);
+  color: rgb(255, 255, 255);
 }
 
-.nav-link:hover {
-  color: rgb(213, 213, 213);
+.container-fluid:hover {
+  color: rgb(0, 0, 0);
   cursor: pointer;
 }
 
@@ -186,7 +187,7 @@
 /*------------CONTACTO--------------*/
 .h1_contacto {
   text-align: center;
-  text-decoration-color: white;
+  color: black;
   font-weight: 900;
   padding-top: 20px;
   margin-top: 25px;
@@ -198,6 +199,7 @@
   padding-left: 0;
   padding-top: 40px;
   padding-bottom: 40px;
+  color: black;
   text-align: center;
   margin-bottom: 50px;
   font-weight: 800;
@@ -586,6 +588,9 @@ a:hover {
     background-position: center center;
     background-attachment: scroll;
   }
+  .wsap_pagina_activa {
+    background-image: none;
+  }
 }
 @media only screen and (max-width: 800px) and (min-width: 501px) {
   #bootstrap_navbar_contacto {
@@ -691,6 +696,8 @@ a:hover {
 @media only screen and (max-width: 500px) and (min-width: 341px) {
   .present {
     font-size: 20px;
+    color: black;
+    -webkit-text-stroke: 0.1px white;
   }
 }
 @media only screen and (max-width: 820px) and (min-width: 501px) {

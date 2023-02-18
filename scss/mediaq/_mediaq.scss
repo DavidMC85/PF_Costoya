@@ -16,7 +16,7 @@
         background-position: center center;
         background-attachment: scroll;
         background-repeat: no-repeat;
-        }
+    }   
 }
 
 @media only screen and (max-width: 800px) and (min-width: 501px) {
@@ -40,13 +40,17 @@
 /*-----------------------NAVBAR CONTACTO---------------------*/
 
 @media only screen and (max-width: 500px) and (min-width: 341px) {
-#bootstrap_navbar_contacto {
-    background-image: url(../assets/images/backgorunds/flacha_corta.jpg);
-    background-size: 100% 100%;
-    background-position: center center;
-    background-attachment: scroll;
+    #bootstrap_navbar_contacto {
+        background-image: url(../assets/images/backgorunds/flacha_corta.jpg);
+        background-size: 100% 100%;
+        background-position: center center;
+        background-attachment: scroll;
+    }
+    .wsap_pagina_activa {
+        background-image: none
     }
 }
+
 
 @media only screen and (max-width: 800px) and (min-width: 501px) {
     #bootstrap_navbar_contacto {
@@ -167,6 +171,8 @@
 @media only screen and (max-width: 500px) and (min-width: 341px) {
     .present {
         font-size: 20px;
+        color: black;
+        -webkit-text-stroke: .1px white;
     }
 }
 
